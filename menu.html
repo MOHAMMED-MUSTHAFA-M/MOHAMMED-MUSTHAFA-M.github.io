@@ -134,24 +134,25 @@ background: none;
 box-shadow: none;
 }
 
-.logo-container{
-max-width: 550px;
-width: 90%;
-margin-bottom: 15px;
-position: relative;
-animation: logoFloat 4s ease-in-out infinite;
-filter: drop-shadow(0 0 35px rgba(0, 255, 135, 0.4));
+.logo-container {
+  max-width: 550px;
+  width: 90%;
+  /* This centers the container horizontally and keeps your 15px bottom margin */
+  margin: 0 auto 15px; 
+  position: relative;
+  animation: logoFloat 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 35px rgba(0, 255, 135, 0.4));
 }
 
 .logo-img {
-width: 100%;
-height: auto;
-display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-@keyframes logoFloat{
-0%,100%{transform:translateY(0) scale(1)}
-50%{transform:translateY(-12px) scale(1.02)}
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.02); }
 }
 
 .hero h1{
@@ -545,8 +546,8 @@ section{padding:70px 6%}
 <!-- HERO (Premium custom reveal) -->
 <section class="hero" data-aos="fade-zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
   <div class="logo-container">
-  <center><img src="PIXELMARKprime.png" alt="PIXELMARK Logo" class="logo-img"></center>
-  </div>
+  <img src="PIXELMARKprime.png" alt="PIXELMARK Logo" class="logo-img">
+</div>
   <h1>PIXELMARK</h1>
   <h3>We Assist Your Dreams</h3>
   <p>A premium creative and digital branding agency turning ambitious ideas into exceptional brand experiences.</p>
