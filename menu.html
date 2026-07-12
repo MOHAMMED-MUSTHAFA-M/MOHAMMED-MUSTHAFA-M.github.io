@@ -148,11 +148,12 @@ box-shadow: none;
   width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto; /* Ensures the image centers inside the container */
 }
 
 @keyframes logoFloat {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-12px) scale(1.02); }
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(0, -12px, 0) scale(1.02); }
 }
 
 .hero h1{
